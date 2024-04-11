@@ -1,16 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Home from './screens/Home';
+import * as React from 'react-native';
+
+import Router from './Router';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      
-    </View>
-  );
+  return <Router />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    
-  },
-});
+
+
+
+
