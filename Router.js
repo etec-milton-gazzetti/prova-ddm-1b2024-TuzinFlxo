@@ -4,7 +4,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 
 import Home from "./screens/Home/index"
-import Cont from "./screens/Cont/index"
+import Sobre from "./screens/Sobre/index"
+import History from "./screens/History/index"
 
 
 export default function Router() {
@@ -12,7 +13,8 @@ export default function Router() {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="Cont"  component={Cont} />
+                <Stack.Screen name="Sobre"  component={Sobre} />
+                <Stack.Screen name="History" component={History} />
             </Stack.Navigator>
         </NavigationContainer>
     );
