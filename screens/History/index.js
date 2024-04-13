@@ -1,13 +1,51 @@
 import * as React from 'react';
-import { Text, Button, View, Image, ImageBackground, ScrollView } from 'react-native';
+import { Text, Button, View, Image, ImageBackground, ScrollView, Pressable } from 'react-native';
+import Fundo_M from '../../assets/Fundo_M.png'
+import oraculo from '../../assets/oraculo.png'
 
 
 export default function History({ navigation }) {
     return (
-      <ScrollView>
+      <ScrollView style={{backgroundColor: "#141414"}}>
+
+<Image source={oraculo} style={{width: '95%',
+    height: '30%', alignSelf: "center", paddingBottom: 50, paddingTop: 50}}/>
+
+    
+        
+
 
     <View style={styles.content}>
-        <Text style={{  fontSize: 20, color: '#000000', }}>
+
+      
+    
+
+    <ImageBackground source={Fundo_M} style={styles.background}/>
+
+
+    <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+
+
+    
+
+  
+
+    
+
+    
+    
+    
+        <Text style={{  fontSize: 20, color: '#ffff', textAlign: 'center', paddingHorizontal: 20 }}>
+
+          
+    
             
 A Inquisição das Bruxas: Um Capítulo Sombrio na História da Humanidade
 
@@ -41,8 +79,17 @@ A Inquisição das Bruxas permanece como um dos capítulos mais sombrios da hist
 
         </Text>
 
+
+
+        
+
+
+
+
     
     </View>
+
+    
 
       </ScrollView>
 

@@ -10,6 +10,7 @@ export default styles = StyleSheet.create({
     alignItens: 'center',
     textTransform: 'uppercase',
     alignSelf: 'center',
+    color: "#ffff"
   },
   title: {
     textTransform: 'uppercase',
@@ -19,5 +20,9 @@ export default styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     position: "absolute",
+    alignItems: "center",
+    alignContent: "center",
+    textAlign: "center",
+    alignSelf: "center",
   }
 });

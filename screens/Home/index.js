@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Text, Button, View, Image, ImageBackground } from 'react-native';
+import { Text, Button, View, Image, ImageBackground, Pressable } from 'react-native';
 import styles from './styles';
-import fogueira from '../../assets/fogueira.jpg'
+import fogueira from '../../assets/Fogueira.png'
 
 export default function Home({ navigation }) {
     return (
@@ -9,24 +9,52 @@ export default function Home({ navigation }) {
       <View style={styles.content}> 
       
       <ImageBackground source={fogueira} style={styles.background}/>
-        
-        <Text style={{  fontSize: 25, color: '#000000', alignItems: "center",  }}>
-           Santa Inquisição
-        </Text>
 
-        <Button 
-        title="Atos Santos"
-        onPress={() => navigation.navigate('History')}
-        />
+
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
+      
+      
+
+      <Text style={{color: '#fff',alignSelf: 'center' }}>História:</Text>
+
+      <Text> </Text>
+        
+
+      <Pressable
+        style={{ padding: 10, backgroundColor: '#ffff', borderRadius: 25,  width: '60%', height: '9%', alignItems: 'center' }}
+        onPress={() => navigation.navigate("History")}
+      >
+        <Text style={{ color: '#141414', fontSize: 30 }}>Atos Divinos</Text>
+      </Pressable>
 
         <Text> </Text>
 
-        <Text> Criador do app :</Text>
+        <Text style={{color: '#fff',alignSelf: 'center' }}>Criador do app :</Text>
 
-        <Button 
-        title="Biografia"
-        onPress={() => navigation.navigate('Sobre')}
-        />
+        <Text> </Text>
+
+        <Pressable
+        style={{ padding: 10, backgroundColor: '#ffff', borderRadius: 25,  width: '60%', height: '10%', alignItems: 'center' }}
+        onPress={() => navigation.navigate("Sobre")}
+      >
+        <Text style={{ color: '#141414', fontSize: 40 }}>Biografia</Text>
+      </Pressable>
+
       </View>
 
 
